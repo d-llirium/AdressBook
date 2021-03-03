@@ -11,7 +11,7 @@ struct AddressBookView: View {
     // TODO: Add property wrapper to viewModel so that it observes changes
     var viewModel = AddressBookViewModel()
     
-    // TODO: Add property wrapper to displayFavoriteCount property
+    // TODO: Add property wrapper to displayFavoriteCount property so it can be reassigned
     var displayFavoriteCount = true
     
     var body: some View {
