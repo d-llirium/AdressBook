@@ -9,10 +9,10 @@ import SwiftUI
 
 struct AddressBookView: View {
     // TODO: STATEOBJECT - Add property wrapper to viewModel so that it observes changes
-    var viewModel = AddressBookViewModel()
+    private var viewModel = AddressBookViewModel()
     
     // TODO: STATE - Add property wrapper to displayFavoriteCount property so it can be reassigned
-    var displayFavoriteCount = true
+    private var displayFavoriteCount = true
     
     var body: some View {
         VStack {
@@ -31,6 +31,7 @@ struct AddressBookView: View {
             }
             // TODO: STATE - Add toggle for displayFavoriteCount
         }
+        .background(Color(red: 254/255, green: 240/255, blue: 229/255).ignoresSafeArea())
     }
 }
 
