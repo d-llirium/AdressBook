@@ -8,18 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		F23A6DCA25F0281D00494ABD /* AddressBookWithPropertyWrappersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23A6DC925F0281D00494ABD /* AddressBookWithPropertyWrappersApp.swift */; };
-		F23A6DCC25F0281D00494ABD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23A6DCB25F0281D00494ABD /* ContentView.swift */; };
+		F23A6DCC25F0281D00494ABD /* AddressBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23A6DCB25F0281D00494ABD /* AddressBookView.swift */; };
 		F23A6DCE25F0282000494ABD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F23A6DCD25F0282000494ABD /* Assets.xcassets */; };
 		F23A6DD125F0282000494ABD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F23A6DD025F0282000494ABD /* Preview Assets.xcassets */; };
+		F23A6DDA25F028F700494ABD /* AddressBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23A6DD925F028F700494ABD /* AddressBook.swift */; };
+		F23A6DDE25F0290D00494ABD /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23A6DDD25F0290D00494ABD /* Contact.swift */; };
+		F23A6DE425F0295000494ABD /* AddressBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23A6DE325F0295000494ABD /* AddressBookViewModel.swift */; };
+		F23A6DF225F02AB200494ABD /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23A6DF125F02AB200494ABD /* ContactsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F23A6DC625F0281D00494ABD /* AddressBookWithPropertyWrappers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AddressBookWithPropertyWrappers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F23A6DC925F0281D00494ABD /* AddressBookWithPropertyWrappersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressBookWithPropertyWrappersApp.swift; sourceTree = "<group>"; };
-		F23A6DCB25F0281D00494ABD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F23A6DCB25F0281D00494ABD /* AddressBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressBookView.swift; sourceTree = "<group>"; };
 		F23A6DCD25F0282000494ABD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F23A6DD025F0282000494ABD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F23A6DD225F0282000494ABD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F23A6DD925F028F700494ABD /* AddressBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressBook.swift; sourceTree = "<group>"; };
+		F23A6DDD25F0290D00494ABD /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		F23A6DE325F0295000494ABD /* AddressBookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressBookViewModel.swift; sourceTree = "<group>"; };
+		F23A6DF125F02AB200494ABD /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +61,9 @@
 			isa = PBXGroup;
 			children = (
 				F23A6DC925F0281D00494ABD /* AddressBookWithPropertyWrappersApp.swift */,
-				F23A6DCB25F0281D00494ABD /* ContentView.swift */,
+				F23A6DF625F02E7F00494ABD /* Views */,
+				F23A6DE625F0295400494ABD /* ViewModel */,
+				F23A6DE025F0293C00494ABD /* Models */,
 				F23A6DCD25F0282000494ABD /* Assets.xcassets */,
 				F23A6DD225F0282000494ABD /* Info.plist */,
 				F23A6DCF25F0282000494ABD /* Preview Content */,
@@ -67,6 +77,32 @@
 				F23A6DD025F0282000494ABD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F23A6DE025F0293C00494ABD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F23A6DD925F028F700494ABD /* AddressBook.swift */,
+				F23A6DDD25F0290D00494ABD /* Contact.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F23A6DE625F0295400494ABD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F23A6DE325F0295000494ABD /* AddressBookViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F23A6DF625F02E7F00494ABD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F23A6DCB25F0281D00494ABD /* AddressBookView.swift */,
+				F23A6DF125F02AB200494ABD /* ContactsView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +174,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F23A6DCC25F0281D00494ABD /* ContentView.swift in Sources */,
+				F23A6DE425F0295000494ABD /* AddressBookViewModel.swift in Sources */,
+				F23A6DDE25F0290D00494ABD /* Contact.swift in Sources */,
+				F23A6DDA25F028F700494ABD /* AddressBook.swift in Sources */,
+				F23A6DF225F02AB200494ABD /* ContactsView.swift in Sources */,
+				F23A6DCC25F0281D00494ABD /* AddressBookView.swift in Sources */,
 				F23A6DCA25F0281D00494ABD /* AddressBookWithPropertyWrappersApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
