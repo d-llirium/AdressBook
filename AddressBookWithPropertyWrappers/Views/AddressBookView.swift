@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct AddressBookView: View {
-    // TODO: Add property wrapper to viewModel so that it observes changes
+    // TODO: STATEOBJECT - Add property wrapper to viewModel so that it observes changes
     var viewModel = AddressBookViewModel()
     
-    // TODO: Add property wrapper to displayFavoriteCount property so it can be reassigned
+    // TODO: STATE - Add property wrapper to displayFavoriteCount property so it can be reassigned
     var displayFavoriteCount = true
     
     var body: some View {
@@ -20,7 +20,7 @@ struct AddressBookView: View {
                 .font(.title)
                 .padding()                               
             Spacer()
-            ContactsView() //TODO: Pass the viewModel to the ContactsView
+            ContactsView() //TODO: ENVIRONMENTOBJECT - Pass the viewModel to the ContactsView
             Spacer()
             if displayFavoriteCount {
                 HStack {
@@ -29,7 +29,7 @@ struct AddressBookView: View {
                     Spacer()
                 }
             }
-            // TODO: Add toggle for displayFavoriteCount
+            // TODO: STATE - Add toggle for displayFavoriteCount
         }
     }
 }

@@ -7,8 +7,8 @@
 
 import Foundation
 
-class AddressBookViewModel { // TODO: Conform to a protocol so that the view can observe changes
-    var addressBook = AddressBook() // TODO: Add a property wrapper so that changes will be published
+class AddressBookViewModel { // TODO: STATEOBJECT - Conform to a protocol so that the view can observe changes
+    var addressBook = AddressBook() // TODO: PUBLISHED - Add a property wrapper so that changes will be published
     
     var contactCount: Int { addressBook.numberOfContacts }
     
