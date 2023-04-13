@@ -12,7 +12,7 @@ struct AddressBookView: View {
     private var viewModel = AddressBookViewModel()
     
     // TODO: STATE - Add property wrapper to displayFavoriteCount property so it can be reassigned
-    private var displayFavoriteCount = true
+    @State private var displayFavoriteCount = true
     
     var body: some View {
         VStack {
@@ -22,6 +22,10 @@ struct AddressBookView: View {
             Spacer()
             ContactsView() //TODO: ENVIRONMENTOBJECT - Pass the viewModel to the ContactsView
             Spacer()
+            Toggle(
+                "Display number of favorites",
+                isOn: $displayFavoriteCount
+            ).padding()
             if displayFavoriteCount {
                 HStack {
                     Text("You have \(viewModel.favoritedContactCount) favorite" + (viewModel.favoritedContactCount != 1 ? "s" : ""))
