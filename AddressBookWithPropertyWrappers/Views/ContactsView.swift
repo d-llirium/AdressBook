@@ -29,7 +29,7 @@ struct ContactsView: View {
                     viewModel.toggleFavorite(atIndex: index)
                 }) {
                     // MARK: 9 ENVIRONMENTOBJECT - Update the star to be filled when the contact is a favorite
-                    contact.isFavorite ? Image(systemName: "star.fill") : Image(systemName: "star")
+                    contact.isFavorite ? Image(systemName: "star.fill") : Image(systemName: "star") // @Published changes are published to any views that are observing, 
                 }
             }
             .padding()
