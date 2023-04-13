@@ -11,7 +11,7 @@ struct AddressBookView: View {
     // TODO: STATEOBJECT - Add property wrapper to viewModel so that it observes changes
     private var viewModel = AddressBookViewModel()
     
-    // TODO: 1 STATE - Add property wrapper to displayFavoriteCount property so it can be reassigned
+    // MARK: 1 STATE - Add property wrapper to displayFavoriteCount property so it can be reassigned
     @State private var displayFavoriteCount = true
     
     var body: some View {
@@ -20,7 +20,7 @@ struct AddressBookView: View {
                 .font(.title)
                 .padding()                               
             Spacer()
-            ContactsView().environmentObject(viewModel) //TODO: 6 ENVIRONMENTOBJECT - Pass the viewModel to the ContactsView
+            ContactsView().environmentObject(viewModel) //MARK: 10 ENVIRONMENTOBJECT - Pass the viewModel to the ContactsView
             Spacer()
             Toggle(
                 "Display number of favorites",
@@ -33,7 +33,7 @@ struct AddressBookView: View {
                     Spacer()
                 }
             }
-            // TODO: 2 STATE - Add toggle for displayFavoriteCount
+            // MARK: 2 STATE - Add toggle for displayFavoriteCount
         }
         .background(Color(red: 254/255, green: 240/255, blue: 229/255).ignoresSafeArea())
     }

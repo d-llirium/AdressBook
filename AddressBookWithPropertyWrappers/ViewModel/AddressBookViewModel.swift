@@ -6,9 +6,9 @@
 //
 
 import Foundation
-
+// MARK: 3
 class AddressBookViewModel: ObservableObject {
-    var addressBook = AddressBook() // TODO: PUBLISHED - Add a property wrapper so that changes will be published
+    @Published var addressBook = AddressBook() // MARK: 12 PUBLISHED - Add a property wrapper so that changes will be published
     
     var contactCount: Int { addressBook.numberOfContacts }
     
